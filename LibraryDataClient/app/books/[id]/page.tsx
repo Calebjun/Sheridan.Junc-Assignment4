@@ -168,6 +168,30 @@ export default function BookDetailsPage({ params }: { params: Promise<{ id: stri
                 </p>
               </div>
             </div>
+
+            {deleteError && (
+              <div className="mt-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+                <p className="text-red-600 dark:text-red-300">{deleteError}</p>
+              </div>
+            )}
+
+            <div className="mt-6 flex items-center gap-4">
+              <Link href={`/books/${book.itemId}/edit`}>
+                <Button>
+                  <Pencil className="mr-2 h-4 w-4" />
+                  Edit Book
+                </Button>
+              </Link>
+              <Button
+                variant="outline"
+                onClick={handleDelete}
+                disabled={deleteMutation.isPending}
+                className="text-red-600 hover:text-red-700 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20"
+              >
+                <Trash2 className="mr-2 h-4 w-4" />
+                {deleteMutation.isPending ? 'Deleting...' : 'Delete Book'}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
