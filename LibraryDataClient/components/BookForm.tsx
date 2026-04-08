@@ -7,7 +7,10 @@ import { Button } from '@/components/ui/button';
 import { BookFormData } from '@/lib/types';
 
 const bookSchema = z.object({
-  itemId: z.string().min(1, 'Item ID is required'),
+  itemId: z
+    .string()
+    .min(1, 'Item ID is required')
+    .regex(/^[A-Z]+-\d+$/, 'Item ID must be uppercase letters, a dash, and digits (e.g. BK-01)'),
   isbn: z.string().min(1, 'ISBN is required'),
   bookTitle: z
     .string()

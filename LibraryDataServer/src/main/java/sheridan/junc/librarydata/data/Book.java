@@ -15,6 +15,7 @@ import lombok.*;
 public class Book {
     @Id
     @NotBlank(message = "Item ID is required")
+    @Pattern(regexp = "^[A-Z]+-\\d+$", message = "Item ID must be uppercase letters, a dash, and digits (e.g. BK-01)")
     private String itemId;
 
     @NotBlank(message = "ISBN is required")
