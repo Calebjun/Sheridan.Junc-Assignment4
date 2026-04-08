@@ -1,5 +1,6 @@
 package sheridan.junc.librarydata.data;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.*;
@@ -26,6 +27,7 @@ public class Book {
     @Min(value = 1, message = "Page count must be at least 1")
     private int pageCount;
 
+    @JsonProperty("isAvailable")
     private boolean isAvailable;
 
     @Min(value = 0, message = "Late fee cannot be negative")
