@@ -1,0 +1,68 @@
+{
+  "books": [
+    {
+      "itemId": "BK-01",
+      "isbn": "978-01",
+      "bookTitle": "The Silent Algorithm",
+      "pageCount": 450,
+      "isAvailable": true,
+      "lateFeeUsd": 2.5
+    },
+    {
+      "itemId": "BK-02",
+      "isbn": "978-02",
+      "bookTitle": "Caffeine & Code",
+      "pageCount": 210,
+      "isAvailable": false,
+      "lateFeeUsd": 1.75
+    },
+    {
+      "itemId": "BK-03",
+      "isbn": "978-03",
+      "bookTitle": "Binary Sunset",
+      "pageCount": 320,
+      "isAvailable": true,
+      "lateFeeUsd": 5.0
+    },
+    {
+      "itemId": "BK-04",
+      "isbn": "978-04",
+      "bookTitle": "Debugging Life",
+      "pageCount": 180,
+      "isAvailable": true,
+      "lateFeeUsd": 0.5
+    },
+    {
+      "itemId": "BK-05",
+      "isbn": "978-05",
+      "bookTitle": "Vector Fields",
+      "pageCount": 560,
+      "isAvailable": false,
+      "lateFeeUsd": 3.25
+    },
+    {
+      "itemId": "BK-06",
+      "isbn": "978-06",
+      "bookTitle": "The Last Packet",
+      "pageCount": 405,
+      "isAvailable": true,
+      "lateFeeUsd": 2.0
+    },
+    {
+      "itemId": "BK-07",
+      "isbn": "978-07",
+      "bookTitle": "Recursive Dreams",
+      "pageCount": 290,
+      "isAvailable": true,
+      "lateFeeUsd": 1.5
+    },
+    {
+      "itemId": "BK-08",
+      "isbn": "978-08",
+      "bookTitle": "Heap of Trouble",
+      "pageCount": 315,
+      "isAvailable": false,
+      "lateFeeUsd": 4.0
+    }
+  ]
+}

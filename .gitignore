@@ -1,0 +1,19 @@
+# Node
+LibraryDataClient/node_modules/
+LibraryDataClient/.next/
+
+# Gradle
+LibraryDataServer/.gradle/
+LibraryDataServer/build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Temp extracted CityData references
+CityDataServer-temp/
+CityDataClient-temp/
+
+# Zip files
+*.zip
